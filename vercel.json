@@ -3,11 +3,6 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "env": {
-    "NEXT_PUBLIC_WHATSAPP_PHONE": "5493794980495",
-    "NEXT_PUBLIC_SITE_URL": "@next_public_site_url",
-    "NEXT_PUBLIC_SITE_NAME": "@next_public_site_name"
-  },
   "cleanUrls": true,
   "trailingSlash": false,
   "functions": {
