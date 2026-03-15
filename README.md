@@ -20,23 +20,6 @@ Landing page profesional para psicóloga clínica en Entre Ríos, Argentina. Con
 - **React Hooks** - State management
 - **Google Fonts** - Tipografía Nunito
 
-## 📦 Instalación
-
-```bash
-# Clonar repositorio
-git clone <URL>
-
-# Instalar dependencias
-npm install
-
-# Ejecutar en desarrollo
-npm run dev
-
-# Build para producción
-npm run build
-npm start
-```
-
 ## 🎨 Secciones
 
 - **Hero** - CTA para solicitar turno
@@ -57,99 +40,6 @@ npm start
 ├── .eslintrc.json           # ESLint config
 └── .prettierrc               # Prettier config
 ```
-
-## 🛠 Instalación
-
-### Requisitos Previos
-- Node.js 18+ instalado
-- npm o yarn disponible
-
-### Pasos de Instalación
-
-1. **Clonar o descargar el proyecto**
-```bash
-cd "c:\Lucas\Proyectos 2026\Proyecto Psico Next"
-```
-
-2. **Instalar dependencias**
-```bash
-npm install
-```
-
-3. **Configurar variables de entorno**
-
-Copia `.env.local.example` a `.env.local`:
-```bash
-cp .env.local.example .env.local
-```
-
-Luego edita `.env.local` con tus datos:
-```env
-NEXT_PUBLIC_WHATSAPP_PHONE=5493426000000
-NEXT_PUBLIC_WHATSAPP_BUSINESS_NAME=Dra. María García
-NEXT_PUBLIC_SITE_URL=https://tudominio.com
-NEXT_PUBLIC_SITE_NAME=Mi Landing Psicológica
-```
-
-## 🏃 Ejecutar el Proyecto
-
-### Desarrollo
-```bash
-npm run dev
-```
-
-Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
-
-### Build para Producción
-```bash
-npm run build
-```
-
-### Ejecutar versión de Producción
-```bash
-npm run start
-```
-
-### Linting
-```bash
-npm run lint
-npm run lint:fix
-```
-
-## 🎨 Personalización
-
-### Cambiar datos de la psicóloga
-Edit `lib/constants.ts`:
-```typescript
-export const PSYCHOLOGIST = {
-  name: 'Tu nombre',
-  title: 'Psicóloga Clínica',
-  // ... resto de datos
-};
-```
-
-### Cambiar colores
-Edit `tailwind.config.ts`:
-```typescript
-colors: {
-  primary: '#2563eb',    // Azul principal
-  secondary: '#1e40af',  // Azul oscuro
-  // ... más colores
-}
-```
-
-### Agregar imágenes
-1. Coloca imágenes en `public/assets/`
-2. Usa `next/image` en los componentes:
-```tsx
-import Image from 'next/image';
-<Image src="/assets/foto.jpg" alt="Descripción" />
-```
-
-### Modificar contenido
-- Servicios → `lib/constants.ts`
-- Testimonios → `lib/constants.ts`
-- Keywords SEO → `lib/constants.ts`
 
 ## 🔒 Seguridad
 
@@ -250,11 +140,6 @@ rm -rf .next node_modules
 npm install
 npm run dev
 ```
-
-### "WhatsApp no abre"
-- Verifica el número de teléfono en `.env.local`
-- Incluye código de país (+54)
-- Intenta abrir directamente: `wa.me/5493426000000`
 
 ### "Estilos no se aplican"
 ```bash
