@@ -33,12 +33,19 @@ Landing page profesional para psicóloga clínica en Entre Ríos, Argentina. Con
 
 **Desarrollado con ❤️ usando Next.js y Tailwind CSS**
 │   └── assets/              # Imágenes y activos
+
 ├── next.config.js           # Configuración Next.js
+
 ├── tsconfig.json            # Configuración TypeScript
+
 ├── tailwind.config.ts       # Configuración Tailwind
+
 ├── postcss.config.mjs       # Configuración PostCSS
+
 ├── .eslintrc.json           # ESLint config
+
 └── .prettierrc               # Prettier config
+
 ```
 
 ## 🔒 Seguridad
@@ -140,16 +147,6 @@ rm -rf .next node_modules
 npm install
 npm run dev
 ```
-
-### "Estilos no se aplican"
-```bash
-npm run build
-npm run start
-```
-
-### "Error de CORS"
-- Ya configurado en headers de next.config.js
-- Revisa Content-Security-Policy si personalizas
 
 
 ## 📄 Licencia
