@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
-import { Nunito } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 import './globals.css';
 import { PSYCHOLOGIST, SITE_URL, SITE_NAME, SEO_KEYWORDS } from '@/lib/constants';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsapp from '@/components/FloatingWhatsapp';
 
-const nunito = Nunito({
+const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '700'],
   display: 'swap',
-  variable: '--font-nunito',
+  variable: '--font-montserrat',
 });
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${nunito.variable}`} suppressHydrationWarning>
+    <html lang="es" className={`${montserrat.variable}`} suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

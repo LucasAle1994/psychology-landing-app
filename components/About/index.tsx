@@ -7,8 +7,8 @@ export default function About() {
   return (
     <section id="sobremi" className="py-16 bg-white">
       <div className="w-11/12 max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row gap-8 items-center">
-          <div className="w-full md:w-auto">
+        <div className="flex flex-col md:flex-row gap-8 items-center justify-center md:justify-start">
+          <div className="flex justify-center md:w-auto">
             <Image
               src="/assets/3029e64c-b847-4db6-be1d-dbc3e663bb56.png"
               alt="Ana Querencio"

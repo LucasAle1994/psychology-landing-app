@@ -12,7 +12,7 @@ export const PSYCHOLOGIST = {
   Ofrezco un espacio seguro donde puedas hablar con libertad, comprender lo que te está pasando y encontrar herramientas para sentirte mejor.`,
   location: 'Entre Ríos, Argentina',
   phone: process.env.NEXT_PUBLIC_WHATSAPP_PHONE || '543815404411',
-  email: 'analuzquerencio@gmail.com'
+  email: 'lic.analuzquerencio@gmail.com'
 };
 
 // Servicios ofrecidos
