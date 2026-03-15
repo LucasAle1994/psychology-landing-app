@@ -32,7 +32,8 @@ Landing page profesional para psicóloga clínica en Entre Ríos, Argentina. Con
 ---
 
 **Desarrollado con ❤️ usando Next.js y Tailwind CSS**
-│   └── assets/              # Imágenes y activos
+
+│└── assets/              # Imágenes y activos
 
 ├── next.config.js           # Configuración Next.js
 
