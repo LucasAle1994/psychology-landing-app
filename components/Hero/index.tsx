@@ -11,9 +11,12 @@ export default function Hero() {
   };
 
   return (
-    <header className="py-20 text-center text-white bg-cover bg-center"
-  style={{ backgroundImage: "url('/assets/ana-ig-2.png')" }}>
-      <div className="w-11/12 max-w-7xl mx-auto">
+    <header
+      className="py-20 text-center text-white bg-cover bg-center relative "
+      style={{ backgroundImage: "url('/assets/ana-ig-2.png')" }}
+    >
+      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="w-11/12 max-w-7xl mx-auto relative z-10">
         <h1 className="text-5xl font-bold mb-4 drop-shadow-lg">{PSYCHOLOGIST.name}</h1>
         <p className="text-xl mb-6 drop-shadow-lg">{PSYCHOLOGIST.title}</p>
         <button
