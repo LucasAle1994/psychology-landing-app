@@ -15,6 +15,7 @@ const config: Config = {
         dark: '#1d3557',
         lightBlue: '#af4c0f',
         background: '#f4d8c8',
+        // background: '#f0ab83',
       },
       fontFamily: {
         sans: ['var(--font-montserrat)', 'system-ui', 'sans-serif'],

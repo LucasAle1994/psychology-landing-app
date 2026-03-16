@@ -21,7 +21,7 @@ export default function Hero() {
         <p className="text-xl mb-6 drop-shadow-lg">{PSYCHOLOGIST.title}</p>
         <button
           onClick={scrollToContact}
-          className="inline-block bg-primary hover:bg-secondary text-white font-bold py-4 px-6 rounded transition-colors"
+          className="inline-block bg-primary hover:bg-secondary text-white font-bold py-4 px-6 rounded-lg transition-colors"
         >
           Solicitar turno
         </button>
