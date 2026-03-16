@@ -12,7 +12,7 @@ export const PSYCHOLOGIST = {
   Ofrezco un espacio seguro donde puedas hablar con libertad, comprender lo que te está pasando y encontrar herramientas para sentirte mejor.`,
   location: 'Libertador San Martín, Entre Ríos, Argentina',
   phone: process.env.NEXT_PUBLIC_WHATSAPP_PHONE || '543815404411',
-  email: 'lic.analuzquerencio@gmail.com'
+  email: 'lic.analuzquerencio@gmail.com',
 };
 
 // Servicios ofrecidos
@@ -29,14 +29,15 @@ export const SERVICES = [
     title: 'Terapia de pareja',
     description:
       'Espacio de acompañamiento para parejas que buscan mejorar la comunicación, resolver conflictos o atravesar momentos de crisis dentro de la relación.',
-      image: '/assets/personajes-hombre-mujer-hablan-psicologo-sesion-terapia-familiar_633368-19.avif',
-    },
-    {
-      id: 'psicodagnostico',
-      title: 'Psicodiagnóstico',
-      description:
+    image:
+      '/assets/personajes-hombre-mujer-hablan-psicologo-sesion-terapia-familiar_633368-19.avif',
+  },
+  {
+    id: 'psicodagnostico',
+    title: 'Psicodiagnóstico',
+    description:
       'Proceso de evaluación donde se utilizan entrevistas clínicas y herramientas específicas de evaluación para orientar diagnósticos, tratamientos o intervenciones adecuadas.',
-      image: '/assets/istockphoto-1363659665-612x612.jpg',
+    image: '/assets/istockphoto-1363659665-612x612.jpg',
   },
 ];
 
@@ -92,6 +93,56 @@ export const SOCIAL_MEDIA = {
   tiktok: 'https://www.tiktok.com/@psi.querencio',
   facebook: 'https://www.facebook.com/Querencioanaluz',
 };
+
+// Motivos más frecuentes de consulta
+export const FREQUENT_REASONS = [
+  {
+    id: 1,
+    title: 'Autoestima y amor propio',
+    description:
+      'Inseguridad y autocrítica excesiva, lo que dificulta aceptarse y valorarse a uno mismo.',
+  },
+  {
+    id: 2,
+    title: 'Duelos y pérdidas',
+    description:
+      'Dificultad para enfrentar la pérdida de seres queridos o adaptarse a cambios significativos en la vida.',
+  },
+  {
+    id: 3,
+    title: 'Depresión',
+    description:
+      'Tristeza profunda, falta de energía y pérdida de interés en actividades que antes disfrutaban.',
+  },
+  {
+    id: 4,
+    title: 'Ansiedad',
+    description:
+      'Sentimientos persistentes de preocupación, tensión o miedo que interfieren con la vida diaria.',
+  },
+  {
+    id: 5,
+    title: 'Estrés',
+    description:
+      'Experiencias dolorosas o traumáticas que continúan afectando el bienestar emocional.',
+  },
+  {
+    id: 6,
+    title: 'Problemas en relaciones',
+    description:
+      'Conflictos interpersonales o patrones de comportamiento que dañan las relaciones con los demás.',
+  },
+  {
+    id: 7,
+    title: 'Regulacion emocional',
+    description: 'Sensación de estar perdido, falta de motivación o incertidumbre sobre el futuro.',
+  },
+  {
+    id: 8,
+    title: 'Perfeccionismo y autoexigencia',
+    description: 'Expectativas poco realistas hacia uno mismo que generan frustración y estrés.',
+  },
+];
 
 // URLs iniciales (actualizar según el dominio)
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
