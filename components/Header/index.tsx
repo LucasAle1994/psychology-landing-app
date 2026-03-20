@@ -9,7 +9,13 @@ export default function Header() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const headerOffset = 70;
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - headerOffset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
       setIsMenuOpen(false);
     }
   };
@@ -19,7 +25,10 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-primary hover:text-secondary transition-colors">
+          <Link
+            href="/"
+            className="text-2xl font-bold text-primary hover:text-secondary transition-colors"
+          >
             ❤️ Psicología
           </Link>
 
@@ -39,6 +48,14 @@ export default function Header() {
                 className="text-text hover:text-primary transition-colors font-medium"
               >
                 Servicios
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => scrollToSection('motivos')}
+                className="text-text hover:text-primary transition-colors font-medium"
+              >
+                Motivos
               </button>
             </li>
             <li>
@@ -65,9 +82,13 @@ export default function Header() {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
-            <span className={`w-6 h-0.5 bg-text transition-all ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+            <span
+              className={`w-6 h-0.5 bg-text transition-all ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`}
+            />
             <span className={`w-6 h-0.5 bg-text transition-all ${isMenuOpen ? 'opacity-0' : ''}`} />
-            <span className={`w-6 h-0.5 bg-text transition-all ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+            <span
+              className={`w-6 h-0.5 bg-text transition-all ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}
+            />
           </button>
         </div>
 
@@ -89,6 +110,14 @@ export default function Header() {
                   className="text-text hover:text-primary transition-colors font-medium block w-full text-left"
                 >
                   Servicios
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection('motivos')}
+                  className="text-text hover:text-primary transition-colors font-medium block w-full text-left"
+                >
+                  Motivos
                 </button>
               </li>
               <li>

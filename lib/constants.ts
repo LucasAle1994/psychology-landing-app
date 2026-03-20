@@ -11,7 +11,7 @@ export const PSYCHOLOGIST = {
   bio: `Soy Licenciada en Psicología, con un enfoque en la comprensión y el abordaje de los pensamientos, las conductas y las emociones que influyen en la vida cotidiana, con el objetivo de promover mayor bienestar y equilibrio emocional.
   Ofrezco un espacio seguro donde puedas hablar con libertad, comprender lo que te está pasando y encontrar herramientas para sentirte mejor.`,
   location: 'Libertador San Martín, Entre Ríos, Argentina',
-  phone: process.env.NEXT_PUBLIC_WHATSAPP_PHONE || '543815404411',
+  phone: process.env.NEXT_PUBLIC_WHATSAPP_PHONE || '5493794980495',
   email: 'lic.analuzquerencio@gmail.com',
 };
 
@@ -116,15 +116,15 @@ export const FREQUENT_REASONS = [
   },
   {
     id: 4,
-    title: 'Ansiedad',
+    title: 'Ansiedad y estrés',
     description:
       'Sentimientos persistentes de preocupación, tensión o miedo que interfieren con la vida diaria.',
   },
   {
     id: 5,
-    title: 'Estrés',
+    title: 'Habilidades Sociales',
     description:
-      'Experiencias dolorosas o traumáticas que continúan afectando el bienestar emocional.',
+      'Capacidades para interactuar con otros de manera efectiva, como escuchar, expresar emociones y resolver conflictos.',
   },
   {
     id: 6,
@@ -135,7 +135,7 @@ export const FREQUENT_REASONS = [
   {
     id: 7,
     title: 'Regulacion emocional',
-    description: 'Sensación de estar perdido, falta de motivación o incertidumbre sobre el futuro.',
+    description: 'Reconocer y gestionar tus emociones para responder de manera mas efectiva a tus vínculos.',
   },
   {
     id: 8,
@@ -146,4 +146,4 @@ export const FREQUENT_REASONS = [
 
 // URLs iniciales (actualizar según el dominio)
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
-export const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'Psicóloga García - Entre Ríos';
+export const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'Psicóloga Ana Luz Querencio - Entre Ríos';

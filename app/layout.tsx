@@ -47,3 +47,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Psychologist",
+      name: PSYCHOLOGIST.name,
+      url: SITE_URL,
+      telephone: PSYCHOLOGIST.phone,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Entre Ríos",
+        addressCountry: "AR"
+      },
+      areaServed: "Entre Ríos, Argentina"
+    })
+  }}
+/>
