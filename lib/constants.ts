@@ -8,8 +8,8 @@ export const PSYCHOLOGIST = {
     'Terapia de Pareja',
     'Terapia Familiar',
   ],
-  bio: `Soy Licenciada en Psicología, con un enfoque en la comprensión y el abordaje de los pensamientos, las conductas y las emociones que influyen en la vida cotidiana, con el objetivo de promover mayor bienestar y equilibrio emocional.
-  Ofrezco un espacio seguro donde puedas hablar con libertad, comprender lo que te está pasando y encontrar herramientas para sentirte mejor.`,
+  bio1: `Soy Licenciada en Psicología, con un enfoque en la comprensión y el abordaje de los pensamientos, las conductas y las emociones que influyen en la vida cotidiana, con el objetivo de promover mayor bienestar y equilibrio emocional.`,
+  bio2: `Ofrezco un espacio seguro donde puedas hablar con libertad, comprender lo que te está pasando y encontrar herramientas para sentirte mejor.`,
   location: 'Libertador San Martín, Entre Ríos, Argentina',
   phone: process.env.NEXT_PUBLIC_WHATSAPP_PHONE || '5493794980495',
   email: 'lic.analuzquerencio@gmail.com',
@@ -143,6 +143,25 @@ export const FREQUENT_REASONS = [
     description: 'Expectativas poco realistas hacia uno mismo que generan frustración y estrés.',
   },
 ];
+
+// Obras sociales y seguros de salud aceptados
+export const HEALTH_INSURANCE = [
+  'Avalian',
+  'OSPJ',
+  'Caja Notarial',
+  'Sancor Salud',
+  'Ciencias Económicas',
+  'Swiss Medical',
+  'Federada Salud',
+  'Unimédica',
+  'Galeno',
+  'Visitar',
+  'IMESA',
+  'PAMI (Veteranos de Guerra)',
+  'Medifé',
+  'OSDE',
+];
+
 
 // URLs iniciales (actualizar según el dominio)
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';

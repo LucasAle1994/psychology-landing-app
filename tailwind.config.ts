@@ -1,4 +1,5 @@
-import type { Config } from 'tailwindcss'
+
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -15,10 +16,10 @@ const config: Config = {
         dark: '#1d3557',
         lightBlue: '#af4c0f',
         background: '#f4d8c8',
-        // background: '#f0ab83',
       },
       fontFamily: {
-        sans: ['var(--font-montserrat)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-nunito)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-playfair)', 'Georgia', 'serif'],
       },
       spacing: {
         safe: 'max(1rem, env(safe-area-inset-bottom))',
@@ -35,6 +36,6 @@ const config: Config = {
     },
   },
   plugins: [],
-}
+};
 
-export default config
+export default config;

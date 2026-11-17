@@ -1,21 +1,38 @@
+
 import type { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
+import { Nunito, Playfair_Display } from 'next/font/google';
 import './globals.css';
-import { PSYCHOLOGIST, SITE_URL, SITE_NAME, SEO_KEYWORDS } from '@/lib/constants';
+
+import {
+  PSYCHOLOGIST,
+  SITE_URL,
+  SITE_NAME,
+  SEO_KEYWORDS,
+} from '@/lib/constants';
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsapp from '@/components/FloatingWhatsapp';
 
-const montserrat = Montserrat({
+const nunito = Nunito({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['400', '600', '700'],
   display: 'swap',
-  variable: '--font-montserrat',
+  variable: '--font-nunito',
+});
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-playfair',
 });
 
 export const metadata: Metadata = {
   title: `${PSYCHOLOGIST.name} - Psicóloga Clínica en Entre Ríos`,
-  description: 'Psicóloga clínica especializada en terapia cognitivo conductual. Servicios de terapia individual, de pareja y familiar en Entre Ríos, Argentina.',
+  description:
+    'Psicóloga clínica especializada en terapia cognitivo conductual. Servicios de terapia individual, de pareja y familiar en Entre Ríos, Argentina.',
   keywords: SEO_KEYWORDS,
   authors: [{ name: PSYCHOLOGIST.name }],
   creator: PSYCHOLOGIST.name,
@@ -23,46 +40,42 @@ export const metadata: Metadata = {
     type: 'website',
     url: SITE_URL,
     title: `${PSYCHOLOGIST.name} - Psicóloga en Entre Ríos`,
-    description: 'Psicóloga clínica especializada en terapia cognitivo conductual',
+    description:
+      'Psicóloga clínica especializada en terapia cognitivo conductual',
     siteName: SITE_NAME,
     locale: 'es_AR',
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="es" className={`${montserrat.variable}`} suppressHydrationWarning>
+    <html
+      lang="es"
+      className={`${nunito.variable} ${playfair.variable}`}
+      suppressHydrationWarning
+    >
       <head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        />
         <link rel="icon" href="/favicon.ico" />
       </head>
 
-      <body className="bg-white text-text">
+      <body className="bg-white text-text font-sans">
         <Header />
+
         <main role="main">{children}</main>
+
         <FloatingWhatsapp />
+
         <Footer />
       </body>
     </html>
   );
 }
-
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Psychologist",
-      name: PSYCHOLOGIST.name,
-      url: SITE_URL,
-      telephone: PSYCHOLOGIST.phone,
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Entre Ríos",
-        addressCountry: "AR"
-      },
-      areaServed: "Entre Ríos, Argentina"
-    })
-  }}
-/>
