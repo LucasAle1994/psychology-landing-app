@@ -65,7 +65,7 @@ export const generateLocalBusinessSchema = () => {
     '@id': SITE_URL,
     name: PSYCHOLOGIST.name,
     image: `${SITE_URL}/og-image.jpg`,
-    description: PSYCHOLOGIST.bio,
+    description: `${PSYCHOLOGIST.bio1} ${PSYCHOLOGIST.bio2}`,
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Entre Ríos',
@@ -100,7 +100,7 @@ export const generateProfessionalSchema = () => {
     '@type': 'MedicalBusiness',
     '@id': SITE_URL,
     name: PSYCHOLOGIST.name,
-    description: PSYCHOLOGIST.bio,
+    description: `${PSYCHOLOGIST.bio1} ${PSYCHOLOGIST.bio2}`,
     image: `${SITE_URL}/og-image.jpg`,
     address: {
       '@type': 'PostalAddress',
